@@ -3,10 +3,10 @@ import ReactDOM from "react-dom/client";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-const sum = (a, b) => a + b;
+const sum = (a, b) => <h1>{a + b}</h1> ;
 
 root.render(
   <React.StrictMode>
-    <h1>{sum(2, 3)}</h1>
+    {sum(2, 3)}
   </React.StrictMode>
 );
